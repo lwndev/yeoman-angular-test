@@ -1,0 +1,15 @@
+<p>This is the detail view.</p>
+<ul ng-repeat="giggity in quagmire">
+	<li>{{giggity}}</li>
+</ul>
+<p>No Filter Applied</p>
+<p>{{'No Filter Applied'| reverse}}</p>
+<input type="text" id="searchy" ng-model="search.$">
+<table>
+	<tr ng-repeat="actor in avengers.cast | filter:search">
+		<td>{{actor.name}}</td>
+		<td>{{actor.character}}</td>
+	</tr>
+</table>
+<superman></superman>
+<div enter="panel" leave="panel">I'm content</div>
